@@ -1,0 +1,394 @@
+{"app_name":"SampleApp","timestamp":"2023-08-10 16:17:52.00 +0200","app_version":"1.0","slice_uuid":"abe54a31-9516-3a9c-a666-66ca2525a36d","build_version":"1","platform":7,"bundleID":"de.eos-uptrade.SampleApp","share_with_app_devs":0,"is_first_party":0,"bug_type":"309","os_version":"macOS 13.4.1 (22F770820d)","roots_installed":0,"name":"SampleApp","incident_id":"29D87085-DE2A-457D-9716-891A3BEB1FFB"}
+{
+  "uptime" : 380000,
+  "procRole" : "Foreground",
+  "version" : 2,
+  "userID" : 501,
+  "deployVersion" : 210,
+  "modelCode" : "MacBookPro18,3",
+  "coalitionID" : 50691,
+  "osVersion" : {
+    "train" : "macOS 13.4.1",
+    "build" : "22F770820d",
+    "releaseType" : "User"
+  },
+  "captureTime" : "2023-08-10 16:17:49.7009 +0200",
+  "incident" : "29D87085-DE2A-457D-9716-891A3BEB1FFB",
+  "pid" : 50054,
+  "translated" : false,
+  "cpuType" : "ARM-64",
+  "roots_installed" : 0,
+  "bug_type" : "309",
+  "procLaunch" : "2023-08-10 16:17:49.6028 +0200",
+  "procStartAbsTime" : 9132389084724,
+  "procExitAbsTime" : 9132391407080,
+  "procName" : "SampleApp",
+  "procPath" : "\/Users\/USER\/Library\/Developer\/CoreSimulator\/Devices\/50C7657B-B79C-42A9-A493-5C14B665C54E\/data\/Containers\/Bundle\/Application\/D54F230E-2D7D-45FC-9848-7E35E24B415E\/SampleApp.app\/SampleApp",
+  "bundleInfo" : {"CFBundleShortVersionString":"1.0","CFBundleVersion":"1","CFBundleIdentifier":"de.eos-uptrade.SampleApp"},
+  "storeInfo" : {"deviceIdentifierForVendor":"95C19344-BD58-54DB-B189-96A9523A8139","thirdParty":true},
+  "parentProc" : "launchd_sim",
+  "parentPid" : 46365,
+  "coalitionName" : "com.apple.CoreSimulator.SimDevice.50C7657B-B79C-42A9-A493-5C14B665C54E",
+  "crashReporterKey" : "74139745-B81D-BB53-3781-9B0F2437B73F",
+  "responsiblePid" : 55432,
+  "responsibleProc" : "SimulatorTrampoline",
+  "codeSigningID" : "de.eos-uptrade.SampleApp",
+  "codeSigningTeamID" : "",
+  "codeSigningFlags" : 570425861,
+  "codeSigningValidationCategory" : 10,
+  "codeSigningTrustLevel" : 0,
+  "wakeTime" : 11846,
+  "sleepWakeUUID" : "101EE5DF-5E33-439B-BA52-D257A5FC7B6A",
+  "sip" : "enabled",
+  "vmRegionInfo" : "0xfffffffffffffff0 is not in any region.  Bytes after previous region: 18446638520056414193  \n      REGION TYPE                    START - END         [ VSIZE] PRT\/MAX SHRMOD  REGION DETAIL\n      MALLOC_NANO (reserved)   600018000000-600020000000 [128.0M] rw-\/rwx SM=NUL  ...(unallocated)\n--->  \n      UNUSED SPACE AT END",
+  "exception" : {"codes":"0x0000000000000001, 0xfffffffffffffff0","rawCodes":[1,-16],"type":"EXC_BAD_ACCESS","signal":"SIGSEGV","subtype":"KERN_INVALID_ADDRESS at 0xfffffffffffffff0"},
+  "termination" : {"flags":0,"code":11,"namespace":"SIGNAL","indicator":"Segmentation fault: 11","byProc":"exc handler","byPid":50054},
+  "vmregioninfo" : "0xfffffffffffffff0 is not in any region.  Bytes after previous region: 18446638520056414193  \n      REGION TYPE                    START - END         [ VSIZE] PRT\/MAX SHRMOD  REGION DETAIL\n      MALLOC_NANO (reserved)   600018000000-600020000000 [128.0M] rw-\/rwx SM=NUL  ...(unallocated)\n--->  \n      UNUSED SPACE AT END",
+  "extMods" : {"caller":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"system":{"thread_create":0,"thread_set_state":24118,"task_for_pid":556},"targeted":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"warnings":0},
+  "faultingThread" : 0,
+  "threads" : [{"triggered":true,"id":7506152,"threadState":{"x":[{"value":105553139991504},{"value":0},{"value":1},{"value":105553139991504},{"value":105553139991616},{"value":0},{"value":119},{"value":5318457912},{"value":0},{"value":0},{"value":4294967296},{"value":2043},{"value":2363881467},{"value":2045},{"value":2365978637},{"value":2363881467},{"value":6643523700,"symbolLocation":0,"symbol":"swift_bridgeObjectRelease"},{"value":218103808},{"value":0},{"sourceLine":14,"value":4307868148,"sourceFile":"SampleApp.swift","symbol":"closure #1 in SampleAppApp.body.getter","symbolLocation":0},{"value":0},{"value":6159004512},{"value":6159005704},{"value":7417796744,"symbolLocation":7920,"symbol":"InitialAllocationPool"},{"value":196608},{"value":0},{"value":6159004832},{"value":6159004944},{"value":4307878232,"symbolLocation":0,"symbol":"type metadata for SampleAppApp"}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6643281396},"cpsr":{"value":1610616832},"fp":{"value":6159004112},"sp":{"value":6159004096},"esr":{"value":2449473540,"description":"(Data Abort) byte read Translation fault"},"pc":{"value":6643278348,"matchesCrashFrame":1},"far":{"value":18446744073709551600}},"queue":"com.apple.main-thread","frames":[{"imageOffset":2982412,"symbol":"_swift_release_dealloc","symbolLocation":16,"imageIndex":18},{"imageOffset":2985460,"symbol":"bool swift::RefCounts<swift::RefCountBitsT<(swift::RefCountInlinedness)1>>::doDecrementSlow<(swift::PerformDeinit)1>(swift::RefCountBitsT<(swift::RefCountInlinedness)1>, unsigned int)","symbolLocation":128,"imageIndex":18},{"imageOffset":7740,"sourceFile":"<compiler-generated>","symbol":"outlined destroy of SampleView","symbolLocation":36,"imageIndex":2},{"imageOffset":6752,"sourceLine":15,"sourceFile":"SampleApp.swift","symbol":"closure #1 in SampleAppApp.body.getter","imageIndex":2,"symbolLocation":108},{"imageOffset":12573548,"imageIndex":3},{"imageOffset":6400,"sourceLine":14,"sourceFile":"SampleApp.swift","symbol":"SampleAppApp.body.getter","imageIndex":2,"symbolLocation":144},{"imageOffset":7576,"sourceFile":"<compiler-generated>","symbol":"protocol witness for App.body.getter in conformance SampleAppApp","symbolLocation":12,"imageIndex":2},{"imageOffset":4313320,"imageIndex":3},{"imageOffset":12456864,"imageIndex":3},{"imageOffset":4311136,"imageIndex":3},{"imageOffset":12457320,"imageIndex":3},{"imageOffset":3684864,"imageIndex":3},{"imageOffset":36404,"symbol":"AG::Graph::UpdateStack::update()","symbolLocation":512,"imageIndex":19},{"imageOffset":38196,"symbol":"AG::Graph::update_attribute(AG::data::ptr<AG::Node>, unsigned int)","symbolLocation":428,"imageIndex":19},{"imageOffset":69596,"symbol":"AG::Graph::input_value_ref_slow(AG::data::ptr<AG::Node>, AG::AttributeID, unsigned int, AGSwiftMetadata const*, unsigned char&, long)","symbolLocation":324,"imageIndex":19},{"imageOffset":160512,"symbol":"AGGraphGetValue","symbolLocation":216,"imageIndex":19},{"imageOffset":12457048,"imageIndex":3},{"imageOffset":12457292,"imageIndex":3},{"imageOffset":3684864,"imageIndex":3},{"imageOffset":36404,"symbol":"AG::Graph::UpdateStack::update()","symbolLocation":512,"imageIndex":19},{"imageOffset":38196,"symbol":"AG::Graph::update_attribute(AG::data::ptr<AG::Node>, unsigned int)","symbolLocation":428,"imageIndex":19},{"imageOffset":69596,"symbol":"AG::Graph::input_value_ref_slow(AG::data::ptr<AG::Node>, AG::AttributeID, unsigned int, AGSwiftMetadata const*, unsigned char&, long)","symbolLocation":324,"imageIndex":19},{"imageOffset":160512,"symbol":"AGGraphGetValue","symbolLocation":216,"imageIndex":19},{"imageOffset":12576980,"imageIndex":3},{"imageOffset":3191264,"imageIndex":3},{"imageOffset":36404,"symbol":"AG::Graph::UpdateStack::update()","symbolLocation":512,"imageIndex":19},{"imageOffset":38196,"symbol":"AG::Graph::update_attribute(AG::data::ptr<AG::Node>, unsigned int)","symbolLocation":428,"imageIndex":19},{"imageOffset":67552,"symbol":"AG::Graph::value_ref(AG::AttributeID, AGSwiftMetadata const*, unsigned char&)","symbolLocation":160,"imageIndex":19},{"imageOffset":160584,"symbol":"AGGraphGetValue","symbolLocation":288,"imageIndex":19},{"imageOffset":4307468,"imageIndex":3},{"imageOffset":18998272,"imageIndex":3},{"imageOffset":18981700,"imageIndex":3},{"imageOffset":18984216,"imageIndex":3},{"imageOffset":305100,"symbol":"+[UIScene _sceneForFBSScene:create:withSession:connectionOptions:]","symbolLocation":940,"imageIndex":8},{"imageOffset":11011016,"symbol":"-[UIApplication _connectUISceneFromFBSScene:transitionContext:]","symbolLocation":880,"imageIndex":8},{"imageOffset":11012176,"symbol":"-[UIApplication workspace:didCreateScene:withTransitionContext:completion:]","symbolLocation":368,"imageIndex":8},{"imageOffset":6156960,"symbol":"-[UIApplicationSceneClientAgent scene:didInitializeWithEvent:completion:]","symbolLocation":260,"imageIndex":8},{"imageOffset":27644,"symbol":"-[FBSScene _callOutQueue_agent_didCreateWithTransitionContext:completion:]","symbolLocation":316,"imageIndex":20},{"imageOffset":185912,"symbol":"__92-[FBSWorkspaceScenesClient createSceneWithIdentity:parameters:transitionContext:completion:]_block_invoke.61","symbolLocation":92,"imageIndex":20},{"imageOffset":75524,"symbol":"-[FBSWorkspace _calloutQueue_executeCalloutFromSource:withBlock:]","symbolLocation":160,"imageIndex":20},{"imageOffset":185052,"symbol":"__92-[FBSWorkspaceScenesClient createSceneWithIdentity:parameters:transitionContext:completion:]_block_invoke","symbolLocation":296,"imageIndex":20},{"imageOffset":14088,"symbol":"_dispatch_client_callout","symbolLocation":16,"imageIndex":21},{"imageOffset":30276,"symbol":"_dispatch_block_invoke_direct","symbolLocation":376,"imageIndex":21},{"imageOffset":315156,"symbol":"__FBSSERIALQUEUE_IS_CALLING_OUT_TO_A_BLOCK__","symbolLocation":44,"imageIndex":20},{"imageOffset":314888,"symbol":"-[FBSSerialQueue _targetQueue_performNextIfPossible]","symbolLocation":176,"imageIndex":20},{"imageOffset":315208,"symbol":"-[FBSSerialQueue _performNextFromRunLoopSource]","symbolLocation":24,"imageIndex":20},{"imageOffset":547948,"symbol":"__CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__","symbolLocation":24,"imageIndex":22},{"imageOffset":547764,"symbol":"__CFRunLoopDoSource0","symbolLocation":172,"imageIndex":22},{"imageOffset":545660,"symbol":"__CFRunLoopDoSources0","symbolLocation":320,"imageIndex":22},{"imageOffset":522584,"symbol":"__CFRunLoopRun","symbolLocation":748,"imageIndex":22},{"imageOffset":520788,"symbol":"CFRunLoopRunSpecific","symbolLocation":584,"imageIndex":22},{"imageOffset":15516,"symbol":"GSEventRunModal","symbolLocation":160,"imageIndex":23},{"imageOffset":11005936,"symbol":"-[UIApplication _run]","symbolLocation":868,"imageIndex":8},{"imageOffset":11022140,"symbol":"UIApplicationMain","symbolLocation":124,"imageIndex":8},{"imageOffset":16085836,"imageIndex":3},{"imageOffset":16085484,"imageIndex":3},{"imageOffset":7664756,"imageIndex":3},{"imageOffset":7444,"sourceLine":11,"sourceFile":"SampleApp.swift","symbol":"static SampleAppApp.$main()","imageIndex":2,"symbolLocation":40},{"imageOffset":7616,"sourceFile":"SampleApp.swift","symbol":"main","symbolLocation":12,"imageIndex":2},{"imageOffset":5396,"symbol":"start_sim","symbolLocation":20,"imageIndex":1},{"imageOffset":24360,"symbol":"start","symbolLocation":2236,"imageIndex":0}]},{"id":7506158,"frames":[{"imageOffset":9780,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":24}]},{"id":7506159,"frames":[{"imageOffset":9780,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":24}]},{"id":7506160,"frames":[{"imageOffset":9780,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":24}]},{"id":7506161,"name":"com.apple.uikit.eventfetch-thread","frames":[{"imageOffset":4496,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":25},{"imageOffset":74328,"symbol":"mach_msg2_internal","symbolLocation":76,"imageIndex":25},{"imageOffset":37784,"symbol":"mach_msg_overwrite","symbolLocation":540,"imageIndex":25},{"imageOffset":5376,"symbol":"mach_msg","symbolLocation":20,"imageIndex":25},{"imageOffset":545960,"symbol":"__CFRunLoopServiceMachPort","symbolLocation":156,"imageIndex":22},{"imageOffset":522964,"symbol":"__CFRunLoopRun","symbolLocation":1128,"imageIndex":22},{"imageOffset":520788,"symbol":"CFRunLoopRunSpecific","symbolLocation":584,"imageIndex":22},{"imageOffset":4584636,"symbol":"-[NSRunLoop(NSRunLoop) runMode:beforeDate:]","symbolLocation":208,"imageIndex":26},{"imageOffset":4585184,"symbol":"-[NSRunLoop(NSRunLoop) runUntilDate:]","symbolLocation":60,"imageIndex":26},{"imageOffset":11659028,"symbol":"-[UIEventFetcher threadMain]","symbolLocation":404,"imageIndex":8},{"imageOffset":4738528,"symbol":"__NSThread__start__","symbolLocation":704,"imageIndex":26},{"imageOffset":29736,"symbol":"_pthread_start","symbolLocation":116,"imageIndex":24},{"imageOffset":9800,"symbol":"thread_start","symbolLocation":8,"imageIndex":24}]},{"id":7506162,"frames":[{"imageOffset":9780,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":24}]},{"id":7506163,"frames":[{"imageOffset":9780,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":24}]},{"id":7506164,"frames":[{"imageOffset":9780,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":24}]}],
+  "usedImages" : [
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4311744512,
+    "size" : 589824,
+    "uuid" : "2237410f-d39c-30ce-9a94-13aacb66b766",
+    "path" : "\/usr\/lib\/dyld",
+    "name" : "dyld"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4309532672,
+    "size" : 327680,
+    "uuid" : "4eba7f04-0a30-3166-8a68-9125b8a1d5f9",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/usr\/lib\/dyld_sim",
+    "name" : "dyld_sim"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4307861504,
+    "CFBundleShortVersionString" : "1.0",
+    "CFBundleIdentifier" : "de.eos-uptrade.SampleApp",
+    "size" : 16384,
+    "uuid" : "abe54a31-9516-3a9c-a666-66ca2525a36d",
+    "path" : "\/Users\/USER\/Library\/Developer\/CoreSimulator\/Devices\/50C7657B-B79C-42A9-A493-5C14B665C54E\/data\/Containers\/Bundle\/Application\/D54F230E-2D7D-45FC-9848-7E35E24B415E\/SampleApp.app\/SampleApp",
+    "name" : "SampleApp",
+    "CFBundleVersion" : "1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4379721728,
+    "CFBundleShortVersionString" : "4.4.36.1.102",
+    "CFBundleIdentifier" : "com.apple.SwiftUI",
+    "size" : 22822912,
+    "uuid" : "d1594f8f-331a-3fab-a631-124e563569fe",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/System\/Library\/Frameworks\/SwiftUI.framework\/SwiftUI",
+    "name" : "SwiftUI",
+    "CFBundleVersion" : "4.4.36.1.102"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4310138880,
+    "size" : 425984,
+    "uuid" : "f5219679-3057-31da-a067-a2d4201afbcd",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/usr\/lib\/swift\/libswiftUIKit.dylib",
+    "name" : "libswiftUIKit.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4308647936,
+    "CFBundleShortVersionString" : "1.0",
+    "CFBundleIdentifier" : "com.apple.UIKit",
+    "size" : 16384,
+    "uuid" : "7e2b5d6b-224b-39a1-af92-5f3909a01490",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/System\/Library\/Frameworks\/UIKit.framework\/UIKit",
+    "name" : "UIKit",
+    "CFBundleVersion" : "6441.1.101"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4309221376,
+    "CFBundleShortVersionString" : "17",
+    "CFBundleIdentifier" : "com.apple.RecapPerformanceTesting",
+    "size" : 81920,
+    "uuid" : "ecc99c9c-5eea-3b7c-bdd4-888597768103",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/System\/Library\/PrivateFrameworks\/RecapPerformanceTesting.framework\/RecapPerformanceTesting",
+    "name" : "RecapPerformanceTesting",
+    "CFBundleVersion" : "17"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4314136576,
+    "CFBundleShortVersionString" : "1.0",
+    "CFBundleIdentifier" : "com.apple.DocumentManager",
+    "size" : 294912,
+    "uuid" : "f55c5260-df24-3181-b7be-db7ee1ceae80",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/System\/Library\/PrivateFrameworks\/DocumentManager.framework\/DocumentManager",
+    "name" : "DocumentManager",
+    "CFBundleVersion" : "280.5.15"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4314857472,
+    "CFBundleShortVersionString" : "1.0",
+    "CFBundleIdentifier" : "com.apple.UIKitCore",
+    "size" : 24002560,
+    "uuid" : "6726ae46-2599-3f92-adca-c48a0512d4ea",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/System\/Library\/PrivateFrameworks\/UIKitCore.framework\/UIKitCore",
+    "name" : "UIKitCore",
+    "CFBundleVersion" : "6441.1.101"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4371464192,
+    "CFBundleShortVersionString" : "1885",
+    "CFBundleIdentifier" : "com.apple.ShareSheet",
+    "size" : 983040,
+    "uuid" : "dc8e84eb-1e2c-3415-af31-e86b29fa6b2d",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/System\/Library\/PrivateFrameworks\/ShareSheet.framework\/ShareSheet",
+    "name" : "ShareSheet",
+    "CFBundleVersion" : "1885"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4312760320,
+    "CFBundleShortVersionString" : "1.0",
+    "CFBundleIdentifier" : "com.apple.PrintKitUI",
+    "size" : 573440,
+    "uuid" : "74ff1df9-3f27-335a-9673-8991789c7e21",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/System\/Library\/PrivateFrameworks\/PrintKitUI.framework\/PrintKitUI",
+    "name" : "PrintKitUI",
+    "CFBundleVersion" : "15.6"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4366860288,
+    "CFBundleShortVersionString" : "8615",
+    "CFBundleIdentifier" : "com.apple.WebKitLegacy",
+    "size" : 1671168,
+    "uuid" : "d8b6af72-5e3d-39b2-bb59-e512d81bc65b",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/System\/Cryptexes\/OS\/System\/Library\/PrivateFrameworks\/WebKitLegacy.framework\/WebKitLegacy",
+    "name" : "WebKitLegacy",
+    "CFBundleVersion" : "8615.1.26.10.23"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4472176640,
+    "CFBundleShortVersionString" : "8615",
+    "CFBundleIdentifier" : "com.apple.JavaScriptCore",
+    "size" : 21725184,
+    "uuid" : "6c92ecb5-f484-3925-b8ac-132e313d11cc",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/System\/Cryptexes\/OS\/System\/Library\/Frameworks\/JavaScriptCore.framework\/JavaScriptCore",
+    "name" : "JavaScriptCore",
+    "CFBundleVersion" : "8615.1.26.10.23"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4630822912,
+    "CFBundleShortVersionString" : "8615",
+    "CFBundleIdentifier" : "com.apple.WebCore",
+    "size" : 41779200,
+    "uuid" : "d5407764-9477-39b2-913f-54409e0fe6cd",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/System\/Cryptexes\/OS\/System\/Library\/PrivateFrameworks\/WebCore.framework\/WebCore",
+    "name" : "WebCore",
+    "CFBundleVersion" : "8615.1.26.10.23"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4373839872,
+    "size" : 3571712,
+    "uuid" : "094a5d7d-536f-3c65-bf0f-42037de47f30",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/System\/Cryptexes\/OS\/System\/Library\/PrivateFrameworks\/WebCore.framework\/Frameworks\/libANGLE-shared.dylib",
+    "name" : "libANGLE-shared.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4370333696,
+    "CFBundleShortVersionString" : "8615",
+    "CFBundleIdentifier" : "com.apple.WebGPU",
+    "size" : 360448,
+    "uuid" : "84b58cce-be36-3c7e-8f54-801c8cb3c7fa",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/System\/Cryptexes\/OS\/System\/Library\/PrivateFrameworks\/WebGPU.framework\/WebGPU",
+    "name" : "WebGPU",
+    "CFBundleVersion" : "8615.1.26.10.23"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4443701248,
+    "size" : 10829824,
+    "uuid" : "f606aa36-49b5-3263-a825-d170b63fa66a",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/System\/Cryptexes\/OS\/System\/Library\/PrivateFrameworks\/WebCore.framework\/Frameworks\/libwebrtc.dylib",
+    "name" : "libwebrtc.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4371365888,
+    "size" : 49152,
+    "uuid" : "806ae646-0aee-359b-883f-e4018780ec94",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/usr\/lib\/libobjc-trampolines.dylib",
+    "name" : "libobjc-trampolines.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 6640295936,
+    "size" : 4591616,
+    "uuid" : "f59b0c69-ee28-3da5-8293-34a59d3375bc",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/usr\/lib\/swift\/libswiftCore.dylib",
+    "name" : "libswiftCore.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 6931312640,
+    "CFBundleShortVersionString" : "4.0.28",
+    "CFBundleIdentifier" : "com.apple.AttributeGraph",
+    "size" : 245760,
+    "uuid" : "5b08a072-334e-385f-ba3e-94ae3c5d306a",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/System\/Library\/PrivateFrameworks\/AttributeGraph.framework\/AttributeGraph",
+    "name" : "AttributeGraph",
+    "CFBundleVersion" : "4.0.28"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 6524575744,
+    "CFBundleShortVersionString" : "812.106",
+    "CFBundleIdentifier" : "com.apple.FrontBoardServices",
+    "size" : 610304,
+    "uuid" : "27de4127-9c41-3ae7-b6c0-d00b0bcd38cd",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/System\/Library\/PrivateFrameworks\/FrontBoardServices.framework\/FrontBoardServices",
+    "name" : "FrontBoardServices",
+    "CFBundleVersion" : "812.106"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 6443700224,
+    "size" : 290816,
+    "uuid" : "392b7c55-8c38-3dea-b7af-c3d7f518e987",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/usr\/lib\/system\/libdispatch.dylib",
+    "name" : "libdispatch.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 6445682688,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.CoreFoundation",
+    "size" : 3862528,
+    "uuid" : "132e87d0-14ac-310c-a5e9-3d9c921cc8ea",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/System\/Library\/Frameworks\/CoreFoundation.framework\/CoreFoundation",
+    "name" : "CoreFoundation",
+    "CFBundleVersion" : "1971"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 6592086016,
+    "CFBundleShortVersionString" : "1.0",
+    "CFBundleIdentifier" : "com.apple.GraphicsServices",
+    "size" : 36864,
+    "uuid" : "8e24edb2-1c99-3652-9ef0-e66191675515",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/System\/Library\/PrivateFrameworks\/GraphicsServices.framework\/GraphicsServices",
+    "name" : "GraphicsServices",
+    "CFBundleVersion" : "1.0"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 7273123840,
+    "size" : 53240,
+    "uuid" : "ba7c01fe-353b-3146-a7c6-f2bb8a0fa842",
+    "path" : "\/usr\/lib\/system\/libsystem_pthread.dylib",
+    "name" : "libsystem_pthread.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 7272771584,
+    "size" : 229352,
+    "uuid" : "4440d44a-2ab3-3da1-9d8b-42f51e44b45b",
+    "path" : "\/usr\/lib\/system\/libsystem_kernel.dylib",
+    "name" : "libsystem_kernel.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 6450028544,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.Foundation",
+    "size" : 8724480,
+    "uuid" : "e7f2a1f0-fb2c-3074-a4ea-e5853bffcee4",
+    "path" : "\/Applications\/Xcode-14.3.0.app\/Contents\/Developer\/Platforms\/iPhoneOS.platform\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS.simruntime\/Contents\/Resources\/RuntimeRoot\/System\/Library\/Frameworks\/Foundation.framework\/Foundation",
+    "name" : "Foundation",
+    "CFBundleVersion" : "1971"
+  },
+  {
+    "size" : 0,
+    "source" : "A",
+    "base" : 0,
+    "uuid" : "00000000-0000-0000-0000-000000000000"
+  }
+],
+  "sharedCache" : {
+  "base" : 6442450944,
+  "size" : 1394393088,
+  "uuid" : "6aaf7359-5494-3c9c-beb5-864397eca121"
+},
+  "vmSummary" : "ReadOnly portion of Libraries: Total=768.0M resident=0K(0%) swapped_out_or_unallocated=768.0M(100%)\nWritable regions: Total=995.5M written=0K(0%) resident=0K(0%) swapped_out=0K(0%) unallocated=995.5M(100%)\n\n                                VIRTUAL   REGION \nREGION TYPE                        SIZE    COUNT (non-coalesced) \n===========                     =======  ======= \nActivity Tracing                   256K        1 \nColorSync                           32K        2 \nFoundation                          16K        1 \nKernel Alloc Once                   32K        1 \nMALLOC                           236.3M       38 \nMALLOC guard page                  192K        9 \nMALLOC_MEDIUM (reserved)         360.0M        3         reserved VM address space (unallocated)\nMALLOC_NANO (reserved)           384.0M        1         reserved VM address space (unallocated)\nSTACK GUARD                       56.1M        8 \nStack                             11.7M        8 \nVM_ALLOCATE                       1056K        2 \n__DATA                            10.1M      344 \n__DATA_CONST                      32.5M      355 \n__DATA_DIRTY                        66K       11 \n__FONT_DATA                          4K        1 \n__LINKEDIT                       390.0M       19 \n__OBJC_RO                         29.1M        1 \n__OBJC_RW                          898K        1 \n__TEXT                           378.0M      363 \ndyld private memory                816K        6 \nmapped file                       29.1M        3 \nshared memory                       16K        1 \n===========                     =======  ======= \nTOTAL                              1.9G     1179 \nTOTAL, minus reserved VM space     1.1G     1179 \n",
+  "legacyInfo" : {
+  "threadTriggered" : {
+    "queue" : "com.apple.main-thread"
+  }
+},
+  "logWritingSignature" : "acca4000161f133102df565bbcaf1d43a60d8303",
+  "trialInfo" : {
+  "rollouts" : [
+    {
+      "rolloutId" : "63582c5f8a53461413999550",
+      "factorPackIds" : {
+
+      },
+      "deploymentId" : 240000002
+    },
+    {
+      "rolloutId" : "6391cacc75b0720ff1f8c695",
+      "factorPackIds" : {
+        "COREOS_ICD" : "63957f508061fa721c8edc4a"
+      },
+      "deploymentId" : 240000007
+    }
+  ],
+  "experiments" : [
+    {
+      "treatmentId" : "a092db1b-c401-44fa-9c54-518b7d69ca61",
+      "experimentId" : "64a844035c85000c0f42398a",
+      "deploymentId" : 400000016
+    },
+    {
+      "treatmentId" : "3a3cf641-8471-4e4e-9ad4-81d0ede970fd",
+      "experimentId" : "64a84dae90d82611a0bd7d3d",
+      "deploymentId" : 400000010
+    }
+  ]
+}
+}
