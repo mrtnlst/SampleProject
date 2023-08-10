@@ -68,7 +68,7 @@ Thread 0 Crashed::  Dispatch queue: com.apple.main-thread
 5   SampleApp                     	       0x100c4d900 SampleAppApp.body.getter + 144 (SampleApp.swift:14)
 6   SampleApp                     	       0x100c4dd98 protocol witness for App.body.getter in conformance SampleAppApp + 12
 ```
-Complete Crashlog
+[Complete Crashlog](https://github.com/mrtnlst/SampleProject/blob/main/Resources/SampleApp-2023-08-10-161752.ips)
 
 ## Hints
 
